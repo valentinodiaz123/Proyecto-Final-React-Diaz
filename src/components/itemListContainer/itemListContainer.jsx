@@ -37,12 +37,6 @@ const ItemListContainer = () => {
 
     }, [categoria])
 
-    // return (
-    //     <>
-    //         <Carrousel />
-    //         <ItemList greeting={items} />
-    //     </>
-    // )
     return (
         categoria ? (
             <>  <h1 className="categoria">{categoria}</h1>

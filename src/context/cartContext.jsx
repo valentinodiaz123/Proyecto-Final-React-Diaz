@@ -4,6 +4,8 @@ export const CartContext = createContext();
 
 export const CartComponenteContext = ({ children }) => {
 
+
+
   const obtenerDatos = () => {
 
     const datosGuardados = localStorage.getItem('cart');
@@ -12,11 +14,15 @@ export const CartComponenteContext = ({ children }) => {
     
   };
 
+
+  
   const [arrayCart, setArrayCart] = useState(obtenerDatos)
 
   const [cantidades, setCantidades] = useState(1)
 
   const [totalCompra, setTotalCompra] = useState (0)
+
+
 
   useEffect(() => {
 
@@ -25,7 +31,11 @@ export const CartComponenteContext = ({ children }) => {
 
   }, [arrayCart]);
 
+
+
   let cartWid = arrayCart.length
+
+
 
   const actualizarTotal = () => {
 
