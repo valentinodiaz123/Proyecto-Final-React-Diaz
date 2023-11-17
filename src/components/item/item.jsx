@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 // import { useContext } from "react"
 
 const Item = ({ productos }) => {
-        return (
+    return (
         <>
             <div className="contenedor-item-list">
                 <img
@@ -17,15 +17,13 @@ const Item = ({ productos }) => {
                     <p className="card-price">$ {productos && productos.price}</p>
                 </div>
 
-                <button className="btn btn-primary m-3">
+                <Link
+                    className="text-light text-decoration-none btn btn-primary m-3"
+                    to={`/item/${productos && productos.id}`}
+                >
+                    Ver Mas
+                </Link>
 
-                    <Link
-                        className="text-light text-decoration-none"
-                        to={`/item/${productos && productos.id}`}
-                    >
-                        Ver Mas
-                    </Link>
-                </button>
             </div>
         </>
     );

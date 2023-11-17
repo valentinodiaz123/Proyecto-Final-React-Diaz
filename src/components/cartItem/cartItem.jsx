@@ -33,7 +33,7 @@ const CartItem = ({ productos }) => {
                     <p className="card-price">Precio por unidad: ${productos && productos.price}</p>
                     <p className="card-price">Cantidad:  {productos && productos.cantidad}</p>
 
-                    <button className="btn btn-danger" onClick={borrar}>borrar</button>
+                    <button className="btn btn-danger" onClick={borrar}>Eliminar producto</button>
 
                 </div>
 

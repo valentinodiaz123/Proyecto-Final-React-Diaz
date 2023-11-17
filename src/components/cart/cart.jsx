@@ -9,17 +9,11 @@ import Button from 'react-bootstrap/Button';
 
 const Cart = () => {
 
-    const { arrayCart, totalCompra } = useContext(CartContext);
+    const { arrayCart, totalCompra, setArrayCart } = useContext(CartContext);
 
-    let total = 0
-
-    console.log("el total de la compta cart: " + totalCompra)
-
-    arrayCart.forEach(element => {
-
-        total += element.cantidad * element.price;
-
-    });
+    const vaciarCarrito = () => {
+        setArrayCart([])
+    }
 
     return (
         arrayCart.length > 0 ? (
@@ -42,6 +36,11 @@ const Cart = () => {
                                 Finalizar Compra
                             </Button>
                         </Link>
+
+                
+                            <Button className="mt-2 btn btn-danger" onClick={vaciarCarrito} variant="primary">
+                                Vaciar carrito
+                            </Button>
                     </div>
 
             </div>
