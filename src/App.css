@@ -1,0 +1,116 @@
+.nav-a {
+  text-decoration: none;
+  color: darkgrey;
+}
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ItemDetailContainer (Esto es momentaneo, ya que tuve problemas para hacer el css por modulos) */
+
+.contenedor-item-d{
+  display: flex;
+  align-items: center;
+  min-height: 95vh;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.imagen-item-d{
+  padding: 4rem;
+  height: 80vh;
+}
+.texto-item-d{
+  padding: 4rem;
+}
+.contenedor-item-d h1{
+  margin-bottom: 3rem;
+}
+.contenedor-item-d h2{
+  margin-bottom: 2rem;
+}
+
+/* ItemListContainer (Esto es momentaneo, ya que tuve problemas para hacer el css por modulos) */
+
+.contenedor-item-list{
+  width: 20rem;
+
+  display: grid;
+  grid-template-rows: auto 1fr 0.5fr;
+  border: solid black 1px;
+  /* border-radius: 50px; */
+  margin: 3rem;
+}
+
+.image-item-list{
+  width: 15rem;
+  height: 20rem;
+  margin: auto;
+  object-fit: contain;
+}
+.text-item-list{
+  text-align: center;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-item-list h1 {
+  font-size: 20px;
+  margin: 1rem;
+}
+
+.load {
+  margin-top: 25rem;
+  font-size: 30px;
+} 
+
+.img-carrousel{
+  height: 800px;
+  object-fit: cover;
+}
+
+/* cart */
+
+.contenedor-cart{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-cart-principal{
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+}
+
+.texto-compra{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 70%; */
+}
+
+.p-compra{
+  font-size: 40px;
+}
+
+.items-cart{
+  width: 20rem;
+  height: 35rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: solid black 1px;
+  margin: 3rem;
+}
+
+.categoria{
+  margin-top: 2rem;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
